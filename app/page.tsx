@@ -28,7 +28,7 @@ export default function Home() {
   const getDaysInSelectedMonth = (): number => {
     if (!selectedMonth) return 0;
     const [year, month] = selectedMonth.split("-").map(Number);
-    const daysInMonth = new Date(year, month, 0).getDate();  
+    const daysInMonth = new Date(year, month, 0).getDate();
     return daysInMonth;
   };
 
@@ -80,10 +80,7 @@ export default function Home() {
       <div className="container">
         <div className="section">
           <div className="header">
-            <img
-              src="https://maisinternet.net.br/site/wp-content/uploads/2024/02/LOGO-NOVA-2-edited.png"
-              alt="logo"
-            />
+            <img src="./logo-laranja.png" />
             <h1>Calculadora de desconto</h1>
           </div>
           <div className="calculadora">
